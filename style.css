@@ -1,0 +1,243 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+:root{
+  --dark-clr: #202427;
+  --light-clr: #313538;
+  --contrast-clr1: #E29773;
+  --contrast-clr-hover: #e29673c5;
+  --contrast-clr2: #18AD9E;
+  --white-faded: rgba(255, 255, 255, 0.719);
+  --radius: 10px;
+  --shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
+  --transition: 0.5s;
+}
+p,h1,h2,h3{
+  cursor: default;
+}
+#container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns:  minmax(250px, 1fr) 3.7fr;
+  grid-template-rows: minmax(170px, 1fr) 5fr;
+}
+#sidebar,
+#header,
+#main-content{
+  background-color: var(--dark-clr);
+  color: white;
+  border: 1px solid var(--light-clr);
+}
+#main-content{
+  background-color: var(--light-clr);
+  display: grid;
+  grid-template-columns: minmax(460px, 2fr) 230px;
+  gap: 1rem;
+  padding: 1rem;
+}
+#projects-container{
+  padding: 1rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+.projects-item{
+  background-color: var(--dark-clr);
+  color: var(--white-faded);
+  display: grid;
+  gap: 0.5rem;
+  padding: 16px;
+  border-radius: var(--radius);
+  border-left: 8px solid var(--contrast-clr2);
+  box-shadow: var(--shadow);
+}
+.projects-item h3{
+  font-weight: 400;
+  color: white;
+}
+.interaction{
+  align-self: end;
+  justify-self: flex-end;
+}
+.interaction svg{
+  color: white;
+  cursor: pointer;
+  stroke-width: 1.5;
+}
+.interaction svg:hover{
+  color: var(--contrast-clr2);
+  transition: var(--transition);
+}
+#trending{
+  margin-top: 16px;
+}
+#ancmnts-container,
+#trending-container{
+  background-color: var(--dark-clr);
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.trending-item{
+  padding: 10px 0;
+}
+.trending-item p{
+  font-size: 0.9rem;
+  color: var(--white-faded);
+  cursor: pointer;
+}
+.trending-item .user-name{
+  color: white;
+  font-weight: 500;
+}
+.trending-user-info{
+  justify-content: center;
+}
+.ancmnts-item{
+  padding: 10px 0;
+  cursor: pointer;
+}
+.ancmnts-item:not(:last-child){
+  border-bottom: 1px solid white;
+}
+.ancmnts-item h4{
+  font-family: 500;
+  font-size: 0.9rem;
+}
+.ancmnts-item p{
+  font-size: 0.8rem;
+  color: var(--white-faded);
+  cursor: pointer;
+}
+#header{
+  display: grid;
+  grid-template-columns: minmax(400px, 1.5fr)  1fr;
+  grid-template-rows: 1fr 1.5fr;
+  padding: 16px;
+}
+#header div{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#header #search-bar,
+#header #user{
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+#header #user-login,
+#header #user-actions{
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+#user-login svg{
+  color: white;
+  cursor: pointer;
+}
+#user-login svg:hover{
+  color: var(--contrast-clr1);
+  transition: var(--transition);
+}
+#search-bar input{
+  flex: 0.7;
+  max-width: 650px;
+  min-width: 150px;
+  padding: 4px;
+  border: none;
+  border-radius: var(--radius);
+}
+#user,
+.trending-item{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+#user-login p{
+  font-weight: 500;
+  cursor: pointer;
+}
+#user-actions button{
+  background-color: var(--contrast-clr1);
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+#user-actions button:hover{
+  background-color: var(--contrast-clr-hover);
+  transition: var(--transition);
+}
+.user-photo{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0
+}
+.user-photo img{
+  width: 280%;
+  height: 280%;
+  position: absolute;
+  left:-90%;
+}
+.trending-profile-pic img{
+  width: 280%;
+  height: 280%;
+  position: absolute;
+  top: -90%;
+}
+.trending-profile-pic{
+  justify-self: center;
+}
+#user-login .user-photo,
+.trending-profile-pic{
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+div#user-info,
+.trending-user-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+#sidebar{
+  grid-area: 1/1/3/2;
+}
+svg{
+  color: var(--contrast-clr1);
+}
+ul{
+  padding: 16px 0;
+}
+.menu-item a,
+#logo{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  gap: 12px;
+}
+#logo{
+  padding: 20px 20px;
+}
+#logo p{
+  font-size: 1.5rem;
+}
+.menu-item a:not(#logo):hover{
+  background-color: var(--light-clr);
+  color: var(--contrast-clr1);
+  transition: var(--transition);
+}
+.menu-item p{
+  font-weight: 500;
+}

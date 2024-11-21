@@ -3,8 +3,712 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Dashboard exercise</title>
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <aside id="sidebar">
+        <div id="logo" class="menu-item">
+          <svg
+            width="40"
+            height="40"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.6 4.8a1.2 1.2 0 0 1 1.2-1.2h14.4a1.2 1.2 0 0 1 1.2 1.2v2.4a1.2 1.2 0 0 1-1.2 1.2H4.8a1.2 1.2 0 0 1-1.2-1.2V4.8Zm0 7.2a1.2 1.2 0 0 1 1.2-1.2H12a1.2 1.2 0 0 1 1.2 1.2v7.2a1.2 1.2 0 0 1-1.2 1.2H4.8a1.2 1.2 0 0 1-1.2-1.2V12Zm13.2-1.2a1.2 1.2 0 0 0-1.2 1.2v7.2a1.2 1.2 0 0 0 1.2 1.2h2.4a1.2 1.2 0 0 0 1.2-1.2V12a1.2 1.2 0 0 0-1.2-1.2h-2.4Z"
+            ></path>
+          </svg>
+          <h1>Dashboard</h1>
+        </div>
+        <ul class="links">
+          <li class="menu-item">
+            <a href=""
+              ><svg
+                width="25"
+                height="25"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.848 2.752a1.2 1.2 0 0 0-1.696 0l-8.4 8.4a1.2 1.2 0 0 0 1.696 1.696l.352-.351V20.4A1.2 1.2 0 0 0 6 21.6h2.4a1.2 1.2 0 0 0 1.2-1.2V18a1.2 1.2 0 0 1 1.2-1.2h2.4a1.2 1.2 0 0 1 1.2 1.2v2.4a1.2 1.2 0 0 0 1.2 1.2H18a1.2 1.2 0 0 0 1.2-1.2v-7.903l.352.351a1.2 1.2 0 0 0 1.696-1.696l-8.4-8.4Z"
+                ></path></svg
+              >Home</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href=""
+              ><svg
+                width="25"
+                height="25"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M21.6 12a9.6 9.6 0 1 1-19.2 0 9.6 9.6 0 0 1 19.2 0Zm-7.2-3.6a2.4 2.4 0 1 1-4.8 0 2.4 2.4 0 0 1 4.8 0ZM12 13.2a6 6 0 0 0-5.455 3.5A7.184 7.184 0 0 0 12 19.2a7.182 7.182 0 0 0 5.455-2.5A6 6 0 0 0 12 13.2Z"
+                  clip-rule="evenodd"
+                ></path></svg
+              >Profile</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href=""
+              ><svg
+                width="25"
+                height="25"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M21.6 6v9.6a2.4 2.4 0 0 1-2.4 2.4h-6l-6 4.8V18H4.8a2.4 2.4 0 0 1-2.4-2.4V6a2.4 2.4 0 0 1 2.4-2.4h14.4A2.4 2.4 0 0 1 21.6 6ZM8.4 9.6H6V12h2.4V9.6Zm2.4 0h2.4V12h-2.4V9.6Zm7.2 0h-2.4V12H18V9.6Z"
+                  clip-rule="evenodd"
+                ></path></svg
+              >Messages</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href=""
+              ><svg
+                width="25"
+                height="25"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 21.6a9.6 9.6 0 1 0 0-19.2 9.6 9.6 0 0 0 0 19.2Zm1.2-14.4a1.2 1.2 0 1 0-2.4 0V12c0 .318.127.623.352.848l3.393 3.395a1.202 1.202 0 0 0 1.958-.39 1.202 1.202 0 0 0-.26-1.308L13.2 11.503V7.2Z"
+                  clip-rule="evenodd"
+                ></path></svg
+              >History</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href=""
+              ><svg
+                width="25"
+                height="25"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.8 2.4a1.2 1.2 0 1 0 0 2.4h2.4a1.2 1.2 0 1 0 0-2.4h-2.4Z"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  d="M4.8 6a2.4 2.4 0 0 1 2.4-2.4 3.6 3.6 0 0 0 3.6 3.6h2.4a3.6 3.6 0 0 0 3.6-3.6A2.4 2.4 0 0 1 19.2 6v13.2a2.4 2.4 0 0 1-2.4 2.4H7.2a2.4 2.4 0 0 1-2.4-2.4V6Zm3.6 4.8a1.2 1.2 0 1 0 0 2.4h.012a1.2 1.2 0 1 0 0-2.4H8.4Zm3.6 0a1.2 1.2 0 1 0 0 2.4h3.6a1.2 1.2 0 1 0 0-2.4H12Zm-3.6 4.8a1.2 1.2 0 1 0 0 2.4h.012a1.2 1.2 0 1 0 0-2.4H8.4Zm3.6 0a1.2 1.2 0 1 0 0 2.4h3.6a1.2 1.2 0 1 0 0-2.4H12Z"
+                  clip-rule="evenodd"
+                ></path></svg
+              >Tasks</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li class="menu-item">
+            <a href=""
+              ><svg
+                width="25"
+                height="25"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M13.788 3.804c-.456-1.872-3.12-1.872-3.576 0a1.839 1.839 0 0 1-2.743 1.138c-1.647-1.004-3.53.88-2.527 2.527a1.84 1.84 0 0 1-1.137 2.744c-1.873.455-1.873 3.12 0 3.574a1.838 1.838 0 0 1 1.137 2.744c-1.004 1.647.88 3.53 2.527 2.527a1.839 1.839 0 0 1 2.744 1.137c.455 1.873 3.12 1.873 3.574 0a1.84 1.84 0 0 1 2.744-1.137c1.647 1.004 3.53-.88 2.527-2.527a1.839 1.839 0 0 1 1.137-2.744c1.873-.455 1.873-3.12 0-3.574a1.838 1.838 0 0 1-1.137-2.744c1.004-1.647-.88-3.53-2.527-2.527a1.838 1.838 0 0 1-2.744-1.137l.001-.001ZM12 15.6a3.6 3.6 0 1 0 0-7.2 3.6 3.6 0 0 0 0 7.2Z"
+                  clip-rule="evenodd"
+                ></path></svg
+              >Settings</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href=""
+              ><svg
+                width="25"
+                height="25"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M21.6 12a9.6 9.6 0 1 1-19.2 0 9.6 9.6 0 0 1 19.2 0ZM12 8.4a1.2 1.2 0 0 0-1.04.6 1.2 1.2 0 1 1-2.078-1.2 3.6 3.6 0 1 1 4.318 5.196v.204a1.2 1.2 0 1 1-2.4 0V12a1.2 1.2 0 0 1 1.2-1.2 1.2 1.2 0 1 0 0-2.4Zm0 9.6a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4Z"
+                  clip-rule="evenodd"
+                ></path></svg
+              >Support</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href=""
+              ><svg
+                width="25"
+                height="25"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.6 5.999A14.345 14.345 0 0 0 12 2.333 14.345 14.345 0 0 0 21.4 6c.133.78.2 1.584.2 2.401 0 6.27-4.008 11.604-9.6 13.58C6.408 20.005 2.4 14.67 2.4 8.4c0-.818.068-1.62.2-2.401Zm13.848 4.45a1.2 1.2 0 0 0-1.696-1.697L10.8 12.703l-1.552-1.551a1.2 1.2 0 0 0-1.696 1.696l2.4 2.4a1.2 1.2 0 0 0 1.696 0l4.8-4.8Z"
+                  clip-rule="evenodd"
+                ></path></svg
+              >Privacy</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <header id="header">
+        <div id="search-bar">
+          <input type="text" />
+          <svg
+            width="25"
+            height="25"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m21 21-6-6m2-5a7.001 7.001 0 0 1-11.95 4.95A7 7 0 1 1 17 10Z"
+            ></path>
+          </svg>
+        </div>
+        <div id="user-login">
+          <svg
+            width="25"
+            height="25"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0 1 18 14.158V11a6.001 6.001 0 0 0-4-5.659V5a2 2 0 1 0-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0H9m6 0v1a3 3 0 0 1-6 0v-1"
+            ></path>
+          </svg>
+          <div class="user-photo">
+            <img src="user.png" alt="profile-picture" />
+          </div>
+          <p>Casey Ashton</p>
+          <svg
+            width="25"
+            height="25"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m17 16 4-4m0 0-4-4m4 4H7m6 4v1a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1"
+            ></path>
+          </svg>
+        </div>
+        <div id="user">
+          <div class="user-photo">
+            <img src="user.png" alt="profile-picture" />
+          </div>
+          <div id="user-info">
+            <p>Hi there,</p>
+            <h2>Casey Ashton (@casey)</h2>
+          </div>
+        </div>
+        <div id="user-actions">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </header>
+      <main id="main-content">
+        <section id="projects">
+          <h3>Your Projects</h3>
+          <div id="projects-container">
+            <div class="projects-item">
+              <h3>Super Cool Project</h3>
+              <p>
+                Reiciendis, expedita a doloribus! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+              </p>
+              <div class="interaction">
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.951 2.927c-.299-.921-1.602-.921-1.902 0L9.53 7.601a1 1 0 0 1-.951.69H3.665c-.968 0-1.372 1.24-.588 1.81l3.976 2.888a1 1 0 0 1 .363 1.118l-1.518 4.674c-.3.921.755 1.688 1.538 1.118l3.976-2.888a1 1 0 0 1 1.176 0l3.976 2.888c.783.57 1.838-.196 1.538-1.118l-1.518-4.674a1 1 0 0 1 .363-1.118l3.976-2.888c.783-.57.381-1.81-.588-1.81H15.42a1 1 0 0 1-.95-.69l-1.519-4.674Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.121 14.121A3 3 0 1 0 9.88 9.88a3 3 0 0 0 4.242 4.242Z"
+                  ></path>
+                  <path
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 1 1 0-2.684m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 9.316a3 3 0 1 0 5.368 2.684 3 3 0 0 0-5.368-2.684Zm0-9.316a3.003 3.003 0 0 0 4.025 1.341 3 3 0 1 0-4.025-1.341Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="projects-item">
+              <h3>Not That Cool Project</h3>
+              <p>
+                Perferendis culpa ab quaerat minima non est id quos vel ut
+                possimus voluptatibus aperiam. Reiciendis, expedita a doloribus
+              </p>
+              <div class="interaction">
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.951 2.927c-.299-.921-1.602-.921-1.902 0L9.53 7.601a1 1 0 0 1-.951.69H3.665c-.968 0-1.372 1.24-.588 1.81l3.976 2.888a1 1 0 0 1 .363 1.118l-1.518 4.674c-.3.921.755 1.688 1.538 1.118l3.976-2.888a1 1 0 0 1 1.176 0l3.976 2.888c.783.57 1.838-.196 1.538-1.118l-1.518-4.674a1 1 0 0 1 .363-1.118l3.976-2.888c.783-.57.381-1.81-.588-1.81H15.42a1 1 0 0 1-.95-.69l-1.519-4.674Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.121 14.121A3 3 0 1 0 9.88 9.88a3 3 0 0 0 4.242 4.242Z"
+                  ></path>
+                  <path
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 1 1 0-2.684m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 9.316a3 3 0 1 0 5.368 2.684 3 3 0 0 0-5.368-2.684Zm0-9.316a3.003 3.003 0 0 0 4.025 1.341 3 3 0 1 0-4.025-1.341Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="projects-item">
+              <h3>Easy Peasy App</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="interaction">
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.951 2.927c-.299-.921-1.602-.921-1.902 0L9.53 7.601a1 1 0 0 1-.951.69H3.665c-.968 0-1.372 1.24-.588 1.81l3.976 2.888a1 1 0 0 1 .363 1.118l-1.518 4.674c-.3.921.755 1.688 1.538 1.118l3.976-2.888a1 1 0 0 1 1.176 0l3.976 2.888c.783.57 1.838-.196 1.538-1.118l-1.518-4.674a1 1 0 0 1 .363-1.118l3.976-2.888c.783-.57.381-1.81-.588-1.81H15.42a1 1 0 0 1-.95-.69l-1.519-4.674Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.121 14.121A3 3 0 1 0 9.88 9.88a3 3 0 0 0 4.242 4.242Z"
+                  ></path>
+                  <path
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 1 1 0-2.684m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 9.316a3 3 0 1 0 5.368 2.684 3 3 0 0 0-5.368-2.684Zm0-9.316a3.003 3.003 0 0 0 4.025 1.341 3 3 0 1 0-4.025-1.341Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="projects-item">
+              <h3>Money Maker</h3>
+              <p>
+                Reiciendis, expedita a doloribus! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+              </p>
+              <div class="interaction">
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.951 2.927c-.299-.921-1.602-.921-1.902 0L9.53 7.601a1 1 0 0 1-.951.69H3.665c-.968 0-1.372 1.24-.588 1.81l3.976 2.888a1 1 0 0 1 .363 1.118l-1.518 4.674c-.3.921.755 1.688 1.538 1.118l3.976-2.888a1 1 0 0 1 1.176 0l3.976 2.888c.783.57 1.838-.196 1.538-1.118l-1.518-4.674a1 1 0 0 1 .363-1.118l3.976-2.888c.783-.57.381-1.81-.588-1.81H15.42a1 1 0 0 1-.95-.69l-1.519-4.674Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.121 14.121A3 3 0 1 0 9.88 9.88a3 3 0 0 0 4.242 4.242Z"
+                  ></path>
+                  <path
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 1 1 0-2.684m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 9.316a3 3 0 1 0 5.368 2.684 3 3 0 0 0-5.368-2.684Zm0-9.316a3.003 3.003 0 0 0 4.025 1.341 3 3 0 1 0-4.025-1.341Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="projects-item">
+              <h3>Impossible App</h3>
+              <p>
+                Perferendis culpa ab quaerat minima non est id quos vel ut
+                possimus voluptatibus aperiam. Reiciendis, expedita a doloribus
+              </p>
+              <div class="interaction">
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.951 2.927c-.299-.921-1.602-.921-1.902 0L9.53 7.601a1 1 0 0 1-.951.69H3.665c-.968 0-1.372 1.24-.588 1.81l3.976 2.888a1 1 0 0 1 .363 1.118l-1.518 4.674c-.3.921.755 1.688 1.538 1.118l3.976-2.888a1 1 0 0 1 1.176 0l3.976 2.888c.783.57 1.838-.196 1.538-1.118l-1.518-4.674a1 1 0 0 1 .363-1.118l3.976-2.888c.783-.57.381-1.81-.588-1.81H15.42a1 1 0 0 1-.95-.69l-1.519-4.674Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.121 14.121A3 3 0 1 0 9.88 9.88a3 3 0 0 0 4.242 4.242Z"
+                  ></path>
+                  <path
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 1 1 0-2.684m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 9.316a3 3 0 1 0 5.368 2.684 3 3 0 0 0-5.368-2.684Zm0-9.316a3.003 3.003 0 0 0 4.025 1.341 3 3 0 1 0-4.025-1.341Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="projects-item">
+              <h3>Less Cool Project</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="interaction">
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.951 2.927c-.299-.921-1.602-.921-1.902 0L9.53 7.601a1 1 0 0 1-.951.69H3.665c-.968 0-1.372 1.24-.588 1.81l3.976 2.888a1 1 0 0 1 .363 1.118l-1.518 4.674c-.3.921.755 1.688 1.538 1.118l3.976-2.888a1 1 0 0 1 1.176 0l3.976 2.888c.783.57 1.838-.196 1.538-1.118l-1.518-4.674a1 1 0 0 1 .363-1.118l3.976-2.888c.783-.57.381-1.81-.588-1.81H15.42a1 1 0 0 1-.95-.69l-1.519-4.674Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.121 14.121A3 3 0 1 0 9.88 9.88a3 3 0 0 0 4.242 4.242Z"
+                  ></path>
+                  <path
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 1 1 0-2.684m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 9.316a3 3 0 1 0 5.368 2.684 3 3 0 0 0-5.368-2.684Zm0-9.316a3.003 3.003 0 0 0 4.025 1.341 3 3 0 1 0-4.025-1.341Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="projects-item">
+              <h3>Magic Machine</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="interaction">
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.951 2.927c-.299-.921-1.602-.921-1.902 0L9.53 7.601a1 1 0 0 1-.951.69H3.665c-.968 0-1.372 1.24-.588 1.81l3.976 2.888a1 1 0 0 1 .363 1.118l-1.518 4.674c-.3.921.755 1.688 1.538 1.118l3.976-2.888a1 1 0 0 1 1.176 0l3.976 2.888c.783.57 1.838-.196 1.538-1.118l-1.518-4.674a1 1 0 0 1 .363-1.118l3.976-2.888c.783-.57.381-1.81-.588-1.81H15.42a1 1 0 0 1-.95-.69l-1.519-4.674Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.121 14.121A3 3 0 1 0 9.88 9.88a3 3 0 0 0 4.242 4.242Z"
+                  ></path>
+                  <path
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7Z"
+                  ></path>
+                </svg>
+                <svg
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 1 1 0-2.684m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 9.316a3 3 0 1 0 5.368 2.684 3 3 0 0 0-5.368-2.684Zm0-9.316a3.003 3.003 0 0 0 4.025 1.341 3 3 0 1 0-4.025-1.341Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div>
+          <section id="announcements">
+            <h3>Announcements</h3>
+            <div id="ancmnts-container">
+              <div class="ancmnts-item">
+                <h4>Site Maintenance</h4>
+                <p>
+                  Aliquam dignissim sit amet risus in eleifend. Suspendisse
+                  varius, urna ac tristique porttitor, nisi augue tempor enim.
+                </p>
+              </div>
+              <div class="ancmnts-item">
+                <h4>Community Share Day</h4>
+                <p>
+                  Donec nunc orci, semper sed commodo a, elementum vitae ligula.
+                  Morbi elementum finibus ex ac aliquet. Nulla ornare vel mauris
+                  ut gravida.
+                </p>
+              </div>
+              <div class="ancmnts-item">
+                <h4>Updated privacy Policy</h4>
+                <p>
+                  Nulla facilisi. Etiam quis tortor lacus. Ut volutpat
+                  vestibulum magna, quis suscipit dui volutpat id. Nulla
+                  porttitor aliquet massa.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="trending">
+            <h3>Trending</h3>
+            <div id="trending-container">
+              <div class="trending-item">
+                <div class="user-photo trending-profile-pic">
+                  <img src="tegan.png" alt="profile-picture" />
+                </div>
+                <div class="trending-user-info">
+                  <p class="user-name">@tegan</p>
+                  <p>World Peace Builder</p>
+                </div>
+              </div>
+              <div class="trending-item">
+                <div class="user-photo trending-profile-pic">
+                  <img src="morgan.png" alt="profile-picture" />
+                </div>
+                <div class="trending-user-info">
+                  <p class="user-name">@morgan</p>
+                  <p>Super Cool project</p>
+                </div>
+              </div>
+              <div class="trending-item">
+                <div class="user-photo trending-profile-pic">
+                  <img src="kendall.png" alt="profile-picture" />
+                </div>
+                <div class="trending-user-info">
+                  <p class="user-name">@kendall</p>
+                  <p>Life Changing App</p>
+                </div>
+              </div>
+              <div class="trending-item">
+                <div class="user-photo trending-profile-pic">
+                  <img src="alex.png" alt="profile-picture" />
+                </div>
+                <div class="trending-user-info">
+                  <p class="user-name">@alex</p>
+                  <p>No Traffic Maker</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
